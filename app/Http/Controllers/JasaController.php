@@ -14,10 +14,8 @@ class JasaController extends Controller
      */
     public function index()
     {
-        $js = JasaModel::all();
-        return view('jasa.jasa', [
-            'js' => $js
-        ]);
+        $js = JasaModel::paginate(5);
+        return view('jasa.jasa', compact('js'));
     }
 
     /**
@@ -39,7 +37,7 @@ class JasaController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $request->validate([
             'kode_jasa' => 'required|string|max:10|unique:jasa,kode_jasa',
             'jenis_jasa' => 'required|string|max:50',
@@ -107,6 +105,6 @@ class JasaController extends Controller
     {
         JasaModel::where('id', '=', $id)->delete();
         return redirect('jasa')
-        ->with('success', 'Jasa Berhasil Dihapus');
+            ->with('success', 'Jasa Berhasil Dihapus');
     }
 }

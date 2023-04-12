@@ -72,7 +72,11 @@
       </div>
       <!-- /.card-body -->
       <div class="card-footer">
-        
+      <div class="row">
+        <div class="col-md-12">
+          {{$js->links() }}
+        </div>
+      </div>
       </div>
       <!-- /.card-footer-->
     </div>
