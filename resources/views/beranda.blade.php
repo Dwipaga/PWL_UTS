@@ -38,12 +38,12 @@
       </div>
       <div class="card-body">
         <b>Anggota Kelompok 7 :</b> <br>
-        Dwi Paga Ayuba (11/2141720251) <br>
-        Taufiqy Firdaus J (27/2141720124)
+        Dwi Paga Ayuba    (11/2141720251) <br>
+        Taufiqy Firdaus J (27/2141720124) 
       </div>
       <!-- /.card-body -->
       <div class="card-footer">
-
+        
       </div>
       <!-- /.card-footer-->
     </div>
@@ -55,6 +55,6 @@
 @endsection
 @push('custom_js')
 <script>
-  alert("Selamat datang")
+  alert('Selamat Datang!! di LaundryKuy')
 </script>
 @endpush
